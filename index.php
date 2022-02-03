@@ -42,7 +42,7 @@ if(isset($_POST['korisnickoIme']) && isset($_POST['lozinka'])){
 <div class="login-form">
         <div class="main-div">
             <form method="POST" action="#">
-                <h1 id="naslov">Laboratorija BellaLab</h1>
+                <h1 id="naslov"><b>Laboratorija BellaLab</b></h1>
 
                 <div class="forma">
                     <label id="ime">Korisničko ime</label>

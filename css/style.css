@@ -1,0 +1,67 @@
+* {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    background-image: url("../img/index.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#naslov {
+    font-size: 4.5vw;
+    text-align: right;
+    color: rgb(184, 28, 41);
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+.forma {
+
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 800px;
+    margin-right: auto;
+    width: 40%;
+    padding: 20px;
+}
+
+#ime,
+#sifra {
+    font-size: 30px;
+
+}
+
+#ime {
+    margin-right: 50px;
+}
+
+#sifra {
+    margin-right: 138px;
+}
+
+.polje {
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+
+}
+
+#dugme {
+    font-size: 20px;
+    margin-left: 240px;
+    margin-bottom: 30px;
+    border-width: 2px;
+    width: 43%;
+
+
+}
+
+button:hover {
+    opacity: 0.8;
+    border: rgb(255, 255, 255);
+    cursor: pointer;
+}
