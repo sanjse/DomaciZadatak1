@@ -30,6 +30,9 @@ if ($podaci->num_rows == 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/druga.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
     <title>BellaLab</title>
 </head>
 <body>
@@ -53,14 +56,11 @@ if ($podaci->num_rows == 0) {
     </div>
 <br>
 <br>
-<br>
-<br>
-<br>
 
-    <div id="pregled"   style=" background-color: rgb(211, 187, 158);
+    <div id="pregled"   style=" background-color: rgb(83, 10, 10);;
     opacity: 90%; width: 90%; margin-left:auto; margin-right:auto; ">
     <br>
-   <table id="tabela" style="color: black; background-color: bisque; width: 95%; margin-left:auto; margin-right:auto;  border: 1px solid black ">
+   <table id="tabela" style="color: white; background-color: rgb(83, 10, 10); width: 95%; margin-left:auto; margin-right:auto;  border: 1px solid black ">
   
                 <thead class="thead"style="font-size: 40px;  text-align: center;">
                 <tr >
@@ -99,20 +99,20 @@ if ($podaci->num_rows == 0) {
                 </table>
             
             <div class="row">
-                <ul class="pozadina"  style="margin-left:12%; margin-top: 50px; ">
+                <ul class="pozadina"  style="margin-left:5%; margin-top: 50px; ">
                 <li style="display: inline-block;  line-height: 50px; ">
                 <div class="col-md-1" >
-                <button id="dugme-izmeni" style="background-color: bisque; width: 400px; border-radius: 5px; font-size: 25px;" 
+                <button id="dugme-izmeni" style="background-color: white; width: 350px; border-radius: 5px; font-size: 25px;" 
                  data-toggle="modal" data-target="#izmeniModal">Izmeni zakazanu intervenciju</button>
             
                 </div></li> 
                 <li style="display: inline-block;   line-height: 50px;">
                 <div class="col-md-12" >
-                <button id="btn-obrisi"  formmethod="post" style="background-color: bisque;width: 400px;  border-radius: 5px; font-size: 25px;">Obrisi intervenciju</button>
+                <button id="btn-obrisi"  formmethod="post" style="background-color: white;width: 350px;  border-radius: 5px; font-size: 25px;">Obrisi intervenciju</button>
                 </div></li> 
                 <li style="display: inline-block;   line-height: 50px;  ">
                 <div class="col-md-2" >
-                <button id="btn-sortiraj" style="background-color: bisque; width: 400px; border-radius: 5px; font-size: 25px;"
+                <button id="btn-sortiraj" style="background-color: white; width: 350px; border-radius: 5px; font-size: 25px;"
                      onclick="sortTable()">Sortiraj po ambulantama</button>
                 </div> 
              </li> 

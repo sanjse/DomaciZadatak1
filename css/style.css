@@ -1,6 +1,6 @@
 * {
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Oleo Script', cursive;
 
 }
 
@@ -12,17 +12,20 @@ body {
 }
 
 #naslov {
-    font-size: 4.5vw;
+    font-size: 5vw;
     text-align: right;
-    color: rgb(184, 28, 41);
     margin-top: 130px;
     margin-bottom: 0px;
+    font-family: 'Oleo Script', cursive;
+    color: rgb(15, 15, 15);
+    -webkit-text-fill-color: rgb(184, 28, 41);
+    -webkit-text-stroke-width: 1px;
 }
 
 .forma {
 
     background-color: white;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: 800px;
     margin-right: auto;
     width: 40%;

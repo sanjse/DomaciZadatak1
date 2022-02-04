@@ -1,6 +1,3 @@
-
-////
-
 $('#dodajForm').submit(function(){
     event.preventDefault();
     console.log("Dodavanje nove intervencije");

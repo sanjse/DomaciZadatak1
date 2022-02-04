@@ -1,0 +1,53 @@
+* {
+
+    font-family: 'Oleo Script', cursive;
+
+}
+
+body {
+    background-image: url("../img/home.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#naslov {
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 5px;
+    font-family: 'Oleo Script', cursive;
+    color: rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 4px;
+    margin-bottom: 5px;
+}
+
+.zaglavlje {
+    background-color: transparent;
+    opacity: 90%;
+    height: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.zaglavlje ul {
+    text-align: center;
+}
+
+.zaglavlje ul li button {
+    background-color: rgb(83, 10, 10);
+    font-size: 25px;
+    border-radius: 10px;
+    border: rgb(15, 15, 15) solid 4px;
+    padding: 15px 40px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
