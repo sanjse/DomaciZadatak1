@@ -15,6 +15,7 @@ body {
     font-size: 5vw;
     text-align: right;
     margin-top: 130px;
+    margin-right: 10%;
     margin-bottom: 0px;
     font-family: 'Oleo Script', cursive;
     color: rgb(15, 15, 15);
@@ -55,7 +56,7 @@ body {
 
 #dugme {
     font-size: 20px;
-    margin-left: 240px;
+    margin-left: 230px;
     margin-bottom: 30px;
     border-width: 2px;
     width: 43%;

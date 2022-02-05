@@ -36,7 +36,9 @@ if ($podaci->num_rows == 0) {
     <title>BellaLab</title>
 </head>
 <body>
+    <br/><br/>
     <h1 id="naslov">BellaLab zakazane intervencije</h1>  
+    <br/>
     <div class="zaglavlje">
       
         <ul class="pozadina">
@@ -57,18 +59,18 @@ if ($podaci->num_rows == 0) {
 <br>
 <br>
 
-    <div id="pregled"   style=" background-color: rgb(83, 10, 10);;
-    opacity: 90%; width: 90%; margin-left:auto; margin-right:auto; ">
+    <div id="pregled"   style=" background-color: black;
+    opacity: 90%; width: 90%; margin-left:auto; margin-right:auto;">
     <br>
-   <table id="tabela" style="color: white; background-color: rgb(83, 10, 10); width: 95%; margin-left:auto; margin-right:auto;  border: 1px solid black ">
+   <table id="tabela" style="color: white; background-color: black; width: 95%; margin-left:auto; margin-right:auto;">
   
                 <thead class="thead"style="font-size: 40px;  text-align: center;">
                 <tr >
-                <th class="col" style="width: 20%;">Vrsta intervencije</th>
+                <th class="col" style="width: 30%;">Vrsta intervencije</th>
                 <th class="col"style="width: 20%;" >Ambulanta</th>    
-                <th class="col"style="width: 20%;" >Trajanje(min)</th>
-                <th class="col"style="width: 20%;" >Datum</th>
-                <th class="col"style="width: 20%;" >KorisnikID</th>
+                <th class="col"style="width: 15%;" >Trajanje</th>
+                <th class="col"style="width: 15%;" >Datum</th>
+                <th class="col"style="width: 15%;" >KorisnikID</th>
             </tr>
             
                 </thead>
@@ -102,17 +104,17 @@ if ($podaci->num_rows == 0) {
                 <ul class="pozadina"  style="margin-left:5%; margin-top: 50px; ">
                 <li style="display: inline-block;  line-height: 50px; ">
                 <div class="col-md-1" >
-                <button id="dugme-izmeni" style="background-color: white; width: 350px; border-radius: 5px; font-size: 25px;" 
+                <button id="dugme-izmeni" style="color:rgb(83, 10, 10); background-color: rgb(250, 234, 230); width: 350px; border:white; border-radius: 10px; font-size: 25px;" 
                  data-toggle="modal" data-target="#izmeniModal">Izmeni zakazanu intervenciju</button>
             
                 </div></li> 
                 <li style="display: inline-block;   line-height: 50px;">
                 <div class="col-md-12" >
-                <button id="btn-obrisi"  formmethod="post" style="background-color: white;width: 350px;  border-radius: 5px; font-size: 25px;">Obrisi intervenciju</button>
+                <button id="btn-obrisi"  formmethod="post" style="color:rgb(83, 10, 10); background-color: rgb(250, 234, 230);width: 350px; border:white; border-radius: 10px; font-size: 25px;">Obrisi intervenciju</button>
                 </div></li> 
                 <li style="display: inline-block;   line-height: 50px;  ">
                 <div class="col-md-2" >
-                <button id="btn-sortiraj" style="background-color: white; width: 350px; border-radius: 5px; font-size: 25px;"
+                <button id="btn-sortiraj" style="color:rgb(83, 10, 10); background-color: rgb(250, 234, 230); width: 350px; border:white; border-radius: 10px; font-size: 25px;"
                      onclick="sortTable()">Sortiraj po ambulantama</button>
                 </div> 
              </li> 
@@ -130,7 +132,7 @@ if ($podaci->num_rows == 0) {
                 <div class="modal-body">
                     <div class="container prijava-form" >
                         <form action="#" method="post" id="dodajForm">
-                            <h3 style="color: black; text-align: left ">Zakazi intervenciju</h3>
+                            <h3 style="color:rgb(83, 10, 10); text-align: left ">Zakazi intervenciju</h3>
                             <div class="row">
                                 <div class="col-md-11 ">
                                     <div class="form-group">
@@ -156,7 +158,7 @@ if ($podaci->num_rows == 0) {
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button id="Dodaj" type="submit"  style=" background-color: bisque;font-size: 20px; border-radius: 10px">Zakazi projekciju</button>
+                                        <button id="Dodaj" type="submit"  style="color:white; background-color:rgb(83, 10, 10);font-size: 30px; border-radius: 20px">Zakazi intervenciju</button>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +184,7 @@ if ($podaci->num_rows == 0) {
                 <div class="modal-body">
                     <div class="container prijava-form">
                         <form action="#" method="post" id="izmeniForm">
-                            <h3 style="color: black">Izmeni zakazanu intervenciju</h3>
+                            <h3 style="color:rgb(83, 10, 10);">Izmeni zakazanu intervenciju</h3>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -201,10 +203,10 @@ if ($podaci->num_rows == 0) {
                                         <input id="datum" type="date" name="datum"style="border: 1px solid black; width: 200px; " class="form-control" placeholder="Datum *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input id="korisnikID" type="number" name="korisnikID"style="border: 1px solid black; width: 200px; " class="form-control" placeholder="id korisnika(1, 3 ili 5) *" value="" />
+                                        <input id="korisnikID" type="number" name="korisnikID"style="border: 1px solid black; width: 200px; " class="form-control" placeholder="id korisnika(1, 2 ili 3) *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <button id="btnIzmeni" type="submit"  style=" background-color: bisque;font-size: 20px; border-radius: 10px"> Izmeni projekciju
+                                        <button id="btnIzmeni" type="submit"  style=" color:white; background-color:rgb(83, 10, 10);font-size: 30px; border-radius: 20px"> Izmeni intervenciju
                                         </button>
                                     </div>
 
